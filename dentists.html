@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Dentists | Dental Care Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS Files/Essential.css" />
+    <link rel="stylesheet" href="CSS Files/Dentists.Css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <!-- LOGO -->
+          <a href="home.html" class="logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <!-- MOBILE APPOINTMENT BUTTON -->
+          <div class="mobile-appointment">
+            <button
+              type="button"
+              class="appointment-toggle"
+              aria-label="View appointments"
+            >
+              <span class="appointment-icon">♡</span>
+              <span class="appointment-count">0</span>
+            </button>
+          </div>
+
+          <!-- MOBILE MENU BUTTON -->
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- NAVIGATION LINKS -->
+          <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html" class="active">Dentists</a></li>
+            <li><a href="offers.html">Offers & Reviews</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+
+            <!-- DESKTOP APPOINTMENT -->
+            <li class="appointment-menu">
+              <button
+                type="button"
+                class="appointment-toggle"
+                aria-label="View appointments"
+              >
+                <span class="appointment-icon">♡</span>
+                <span class="appointment-count">0</span>
+              </button>
+            </li>
+
+            <!-- BOOK APPOINTMENT -->
+            <li>
+              <a href="contact.html" class="nav-button"> Book Appointment </a>
+            </li>
+          </ul>
+
+          <!-- SHARED APPOINTMENT DROPDOWN -->
+          <div class="appointment-dropdown" id="appointmentDropdown">
+            <div class="appointment-dropdown-header">
+              <div>
+                <span class="section-label">MY APPOINTMENTS</span>
+                <h3>Your Bookings</h3>
+              </div>
+
+              <button
+                type="button"
+                class="appointment-close"
+                id="appointmentClose"
+                aria-label="Close appointments"
+              >
+                ×
+              </button>
+            </div>
+
+            <div class="appointment-list" id="appointmentList">
+              <div class="empty-appointments">
+                <div class="empty-icon">♡</div>
+                <h4>No appointments yet</h4>
+                <p>Your booked appointments will appear here.</p>
+
+                <a href="contact.html" class="btn btn-primary">
+                  Book an Appointment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="dentists-hero">
+        <div class="container dentists-hero-content">
+          <span class="section-label">OUR DENTISTS</span>
+          <h1>Meet the people behind <span>your smile.</span></h1>
+          <p>
+            Our experienced dental professionals combine clinical expertise with
+            a gentle, patient-first approach.
+          </p>
+        </div>
+      </section>
+
+      <!-- INTRODUCTION -->
+      <section class="dentists-intro section-padding">
+        <div class="container intro-grid">
+          <div class="intro-content">
+            <span class="section-label">EXPERT CARE</span>
+            <h2>Experienced hands. <span>Compassionate care.</span></h2>
+            <p>
+              At Dental Care Clinic, we believe great dentistry is about more
+              than treatment. Our team takes the time to understand every
+              patient and create a comfortable experience from the moment you
+              walk through our doors.
+            </p>
+            <p>
+              Whether you need routine preventive care, cosmetic treatment or
+              more advanced dental services, our dentists are here to help you
+              achieve a healthier, more confident smile.
+            </p>
+
+            <div class="intro-stats">
+              <div class="intro-stat">
+                <strong>15+</strong>
+                <span>Years of Experience</span>
+              </div>
+              <div class="intro-stat">
+                <strong>4</strong>
+                <span>Dental Specialists</span>
+              </div>
+              <div class="intro-stat">
+                <strong>5k+</strong>
+                <span>Happy Patients</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="intro-highlight">
+            <div class="highlight-icon">✦</div>
+            <span class="section-label">OUR APPROACH</span>
+            <h3>Care that puts you first.</h3>
+            <p>
+              We focus on clear communication, modern techniques and creating a
+              relaxed environment where every patient feels comfortable.
+            </p>
+
+            <a href="contact.html" class="text-button">
+              Meet us at the clinic <span>→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- DENTIST TEAM -->
+      <section class="dentist-team section-padding">
+        <div class="container">
+          <div class="center-heading">
+            <span class="section-label">OUR TEAM</span>
+            <h2>Meet our dental professionals.</h2>
+            <p>
+              A dedicated team with different areas of expertise, working
+              together to give you complete dental care.
+            </p>
+          </div>
+
+          <div class="dentist-grid">
+            <!-- DENTIST 1 -->
+            <article class="dentist-card">
+              <div class="dentist-image">
+                <img
+                  src="images/dentists/dentist-1.jpg"
+                  alt="Dr. Sarah Mitchell"
+                />
+                <span class="dentist-specialty">GENERAL DENTISTRY</span>
+              </div>
+
+              <div class="dentist-content">
+                <h3>Dr. Sarah Mitchell</h3>
+                <p class="dentist-role">Lead Dentist</p>
+
+                <p class="dentist-description">
+                  Focused on preventive and general dentistry, Dr. Mitchell is
+                  passionate about creating comfortable experiences for patients
+                  of all ages.
+                </p>
+
+                <div class="dentist-details">
+                  <span>General Dentistry</span>
+                  <span>Preventive Care</span>
+                </div>
+
+                <a href="contact.html" class="text-button">
+                  Book with Dr. Mitchell <span>→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- DENTIST 2 -->
+            <article class="dentist-card">
+              <div class="dentist-image">
+                <img
+                  src="images/dentists/dentist-2.jpg"
+                  alt="Dr. James Carter"
+                />
+                <span class="dentist-specialty">COSMETIC DENTISTRY</span>
+              </div>
+
+              <div class="dentist-content">
+                <h3>Dr. James Carter</h3>
+                <p class="dentist-role">Cosmetic Dentist</p>
+
+                <p class="dentist-description">
+                  Dr. Carter combines careful planning with modern cosmetic
+                  techniques to help patients achieve natural-looking, confident
+                  smiles.
+                </p>
+
+                <div class="dentist-details">
+                  <span>Cosmetic Dentistry</span>
+                  <span>Smile Design</span>
+                </div>
+
+                <a href="contact.html" class="text-button">
+                  Book with Dr. Carter <span>→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- DENTIST 3 -->
+            <article class="dentist-card">
+              <div class="dentist-image">
+                <img
+                  src="images/dentists/dentist-3.jpg"
+                  alt="Dr. Emily Wilson"
+                />
+                <span class="dentist-specialty">ORTHODONTICS</span>
+              </div>
+
+              <div class="dentist-content">
+                <h3>Dr. Emily Wilson</h3>
+                <p class="dentist-role">Orthodontist</p>
+
+                <p class="dentist-description">
+                  Dr. Wilson provides personalised orthodontic care, helping
+                  patients improve alignment, function and long-term oral
+                  health.
+                </p>
+
+                <div class="dentist-details">
+                  <span>Orthodontics</span>
+                  <span>Clear Aligners</span>
+                </div>
+
+                <a href="contact.html" class="text-button">
+                  Book with Dr. Wilson <span>→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- DENTIST 4 -->
+            <article class="dentist-card">
+              <div class="dentist-image">
+                <img src="images/dentists/dentist-4.jpg" alt="Dr. Daniel Lee" />
+                <span class="dentist-specialty">RESTORATIVE DENTISTRY</span>
+              </div>
+
+              <div class="dentist-content">
+                <h3>Dr. Daniel Lee</h3>
+                <p class="dentist-role">Restorative Dentist</p>
+
+                <p class="dentist-description">
+                  With a focus on restoring damaged or missing teeth, Dr. Lee
+                  combines precision with a patient-centred approach to
+                  long-term dental health.
+                </p>
+
+                <div class="dentist-details">
+                  <span>Restorative Dentistry</span>
+                  <span>Dental Implants</span>
+                </div>
+
+                <a href="contact.html" class="text-button">
+                  Book with Dr. Lee <span>→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE OUR TEAM -->
+      <section class="team-values section-padding">
+        <div class="container">
+          <div class="center-heading">
+            <span class="section-label">WHY OUR TEAM</span>
+            <h2>More than just dental treatment.</h2>
+            <p>
+              Every member of our team shares the same goal: making quality
+              dental care feel simple, comfortable and personal.
+            </p>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon">♡</div>
+              <h3>Patient First</h3>
+              <p>
+                We listen to your concerns and explain your treatment options
+                clearly before moving forward.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">✦</div>
+              <h3>Modern Expertise</h3>
+              <p>
+                Our team keeps up with modern techniques and approaches to
+                provide effective, comfortable care.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">✓</div>
+              <h3>Complete Care</h3>
+              <p>
+                Different specialties under one roof make it easier to receive
+                coordinated dental care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="dentists-cta">
+        <div class="container cta-content">
+          <div>
+            <span class="section-label">READY TO VISIT?</span>
+            <h2>Let's take care of your smile.</h2>
+            <p>Book an appointment with our friendly dental team today.</p>
+          </div>
+
+          <a href="contact.html" class="btn btn-white">
+            Book an Appointment <span>→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <p>
+            Modern dental care with a gentle, patient-first approach. Helping
+            you feel confident about your smile.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter">x</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Our Dentists</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li>123 Smile Avenue</li>
+            <li>Dental City, DC 10001</li>
+            <li>+1 555 123 4567</li>
+            <li>hello@dentalcare.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Dental Care Clinic. All rights reserved.</p>
+          <p>Designed for better smiles.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS Files/effects.js"></script>
+    <script src="JS Files/appointment.js"></script>
+  </body>
+</html>

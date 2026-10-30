@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Dental Care Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS Files/Essential.css" />
+    <link rel="stylesheet" href="CSS Files/Home.css" />
+  </head>
+ <!-- NAVIGATION -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <!-- LOGO -->
+          <a href="home.html" class="logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <!-- MOBILE APPOINTMENT BUTTON -->
+          <div class="mobile-appointment">
+            <button
+              type="button"
+              class="appointment-toggle"
+              aria-label="View appointments"
+            >
+              <span class="appointment-icon">♡</span>
+              <span class="appointment-count">0</span>
+            </button>
+          </div>
+
+          <!-- MOBILE MENU BUTTON -->
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- NAVIGATION LINKS -->
+          <ul class="nav-links" id="navLinks">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Dentists</a></li>
+            <li><a href="offers.html">Offers & Reviews</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+
+            <!-- DESKTOP APPOINTMENT -->
+            <li class="appointment-menu">
+              <button
+                type="button"
+                class="appointment-toggle"
+                aria-label="View appointments"
+              >
+                <span class="appointment-icon">♡</span>
+                <span class="appointment-count">0</span>
+              </button>
+            </li>
+
+            <!-- BOOK APPOINTMENT -->
+            <li>
+              <a href="contact.html" class="nav-button"> Book Appointment </a>
+            </li>
+          </ul>
+
+          <!-- SHARED APPOINTMENT DROPDOWN -->
+          <div class="appointment-dropdown" id="appointmentDropdown">
+            <div class="appointment-dropdown-header">
+              <div>
+                <span class="section-label">MY APPOINTMENTS</span>
+                <h3>Your Bookings</h3>
+              </div>
+
+              <button
+                type="button"
+                class="appointment-close"
+                id="appointmentClose"
+                aria-label="Close appointments"
+              >
+                ×
+              </button>
+            </div>
+
+            <div class="appointment-list" id="appointmentList">
+              <div class="empty-appointments">
+                <div class="empty-icon">♡</div>
+                <h4>No appointments yet</h4>
+                <p>Your booked appointments will appear here.</p>
+
+                <a href="contact.html" class="btn btn-primary">
+                  Book an Appointment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+ <!-- HERO SECTION -->
+
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <span class="hero-tag">
+                        <span class="tag-dot"></span>
+                        Professional Dental Care Since 2018
+                    </span>
+                    <h1>
+                        Your Smile,
+                        <span>Our Care.</span>
+                    </h1>
+                    <p>
+                        Professional, safe and affordable dental care
+                        for you and your family. Our experienced dentists
+                        are here to help you achieve a healthier and more
+                        confident smile.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary">
+                            Book an Appointment
+                            <span>→</span>
+                        </a>
+                        <a href="services.html" class="btn btn-outline">
+                            Explore Services
+                        </a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <strong>8+</strong>
+                            <span>Years of Care</span>
+                        </div>
+                        <div class="trust-divider"></div>
+                        <div class="trust-item">
+                            <strong>10K+</strong>
+                            <span>Happy Patients</span>
+                        </div>
+                        <div class="trust-divider"></div>
+                        <div class="trust-item">
+                            <strong>5★</strong>
+                            <span>Patient Rating</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image reveal">
+                    <div class="hero-image-wrapper">
+                        <img src="images/hero/hero-home.jpg"
+                             alt="Dentist providing professional dental care">
+                        <div class="hero-floating-card">
+                            <div class="floating-icon">✓</div>
+                            <div>
+                                <strong>Quality Care</strong>
+                                <span>Trusted by patients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+      <!-- QUICK INFORMATION -->
+
+      <section class="quick-info">
+        <div class="container quick-info-grid">
+          <div class="info-box">
+            <div class="info-icon">◷</div>
+
+            <div>
+              <h3>Opening Hours</h3>
+              <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-icon">☎</div>
+
+            <div>
+              <h3>Call Us</h3>
+              <p>+95 9 123 456 789</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-icon">⌖</div>
+
+            <div>
+              <h3>Our Location</h3>
+              <p>Yangon, Myanmar</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-icon">♥</div>
+
+            <div>
+              <h3>Patient Care</h3>
+              <p>Safe & Comfortable Treatment</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT PREVIEW -->
+
+      <section class="about-preview section-padding">
+        <div class="container two-column">
+          <div class="about-image reveal">
+            <div class="image-frame">
+              <img
+                src="images/clinic.jpg"
+                alt="Dental Care Clinic treatment room"
+              />
+
+              <div class="experience-badge">
+                <strong>8+</strong>
+                <span>Years of<br />Experience</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <span class="section-label"> ABOUT DENTAL CARE CLINIC </span>
+
+            <h2>
+              Caring for Your Smile
+              <span>Since 2018</span>
+            </h2>
+
+            <p>
+              Dental Care Clinic has been providing professional and affordable
+              dental services since 2018. Our experienced dentists focus on
+              safe, comfortable and quality dental care for every patient.
+            </p>
+
+            <p>
+              From regular check-ups and teeth cleaning to braces and cosmetic
+              treatments, our clinic provides a range of services to support
+              your oral health.
+            </p>
+
+            <ul class="check-list">
+              <li>
+                <span>✓</span>
+                Experienced dental professionals
+              </li>
+
+              <li>
+                <span>✓</span>
+                Safe and comfortable treatment
+              </li>
+
+              <li>
+                <span>✓</span>
+                Affordable dental services
+              </li>
+            </ul>
+
+            <a href="about.html" class="text-button">
+              Learn More About Us
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+
+      <section class="services-preview section-padding">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <span class="section-label"> OUR SERVICES </span>
+
+              <h2>Complete Dental Care</h2>
+            </div>
+
+            <a href="services.html" class="text-button">
+              View All Services
+              <span>→</span>
+            </a>
+          </div>
+
+          <div class="services-grid">
+            <!-- Service 1 -->
+            <article class="service-card reveal">
+              <div class="service-image">
+                <img src="images/services/checkup.jpg" alt="Dental check-up" />
+              </div>
+
+              <div class="service-content">
+                <div class="service-icon">✚</div>
+                <h3>Dental Check-up</h3>
+                <p>
+                  Regular dental examinations help identify problems early and
+                  maintain healthy teeth.
+                </p>
+                <a href="services.html" class="service-link"> Learn More → </a>
+              </div>
+            </article>
+
+            <!-- Service 2 -->
+            <article class="service-card reveal">
+              <div class="service-image">
+                <img
+                  src="images/services/cleaning.jpg"
+                  alt="Professional teeth cleaning"
+                />
+              </div>
+
+              <div class="service-content">
+                <div class="service-icon">✦</div>
+
+                <h3>Teeth Cleaning</h3>
+                <p>
+                  Professional cleaning removes plaque and helps keep your teeth
+                  and gums healthy.
+                </p>
+                <a href="services.html" class="service-link"> Learn More → </a>
+              </div>
+            </article>
+
+            <!-- Service 3 -->
+            <article class="service-card reveal">
+              <div class="service-image">
+                <img
+                  src="images/services/whitening.jpg"
+                  alt="Teeth whitening treatment"
+                />
+              </div>
+
+              <div class="service-content">
+                <div class="service-icon">✚</div>
+                <h3>Teeth Whitening</h3>
+                <p>
+                  Brighten your smile with professional teeth whitening
+                  treatment.
+                </p>
+                <a href="services.html" class="service-link"> Learn More → </a>
+              </div>
+            </article>
+
+            <!-- Service 4 -->
+            <article class="service-card reveal">
+              <div class="service-image">
+                <img
+                  src="images/services/braces.jpg"
+                  alt="Braces and orthodontic treatment"
+                />
+              </div>
+
+              <div class="service-content">
+                <div class="service-icon">✦</div>
+                <h3>Braces</h3>
+                <p>
+                  Orthodontic treatment designed to improve tooth alignment and
+                  create a healthier smile.
+                </p>
+
+                <a href="services.html" class="service-link"> Learn More → </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--WHY CHOOSE US Section -->
+
+      <section class="why-us section-padding">
+        <div class="container">
+          <div class="center-heading reveal">
+            <span class="section-label"> WHY CHOOSE US </span>
+            <h2>Dental Care You Can Trust</h2>
+            <p>
+              We are committed to providing quality dental care in a safe,
+              friendly and comfortable environment.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card reveal">
+              <div class="feature-number">01</div>
+              <div class="feature-icon">♥</div>
+              <h3>Patient First</h3>
+              <p>
+                Every treatment is planned with the patient's comfort, needs and
+                oral health in mind.
+              </p>
+            </div>
+
+            <div class="feature-card reveal">
+              <div class="feature-number">02</div>
+              <div class="feature-icon">✓</div>
+              <h3>Experienced Dentists</h3>
+              <p>
+                Our experienced dental professionals provide safe and quality
+                dental treatment.
+              </p>
+            </div>
+
+            <div class="feature-card reveal">
+              <div class="feature-number">03</div>
+              <div class="feature-icon">$</div>
+              <h3>Affordable Care</h3>
+
+              <p>
+                We aim to provide professional dental services at affordable
+                prices.
+              </p>
+            </div>
+
+            <div class="feature-card reveal">
+              <div class="feature-number">04</div>
+              <div class="feature-icon">✚</div>
+              <h3>Quality Treatment</h3>
+
+              <p>
+                We provide a range of dental services to support long-term oral
+                health.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED DENTISTS -->
+
+      <section class="dentists-preview section-padding">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <span class="section-label"> OUR DENTISTS </span>
+              <h2>Meet Our Dental Team</h2>
+            </div>
+
+            <a href="dentists.html" class="text-button">
+              Meet All Dentists
+              <span>→</span>
+            </a>
+          </div>
+
+          <div class="dentists-grid">
+            <article class="dentist-card reveal">
+              <div class="dentist-image">
+                <img src="images/dentists/dentist-1.jpg" alt="Dr. Tayza Lin" />
+              </div>
+
+              <div class="dentist-info">
+                <span>GENERAL DENTIST</span>
+                <h3>Dr. Tayza Lin</h3>
+                <p>DDS • 8 Years Experience</p>
+              </div>
+            </article>
+
+            <article class="dentist-card reveal">
+              <div class="dentist-image">
+                <img src="images/dentists/dentist-2.jpg" alt="Dr. Bhome Mhan" />
+              </div>
+
+              <div class="dentist-info">
+                <span>ORTHODONTIST</span>
+                <h3>Dr. Bhome Mhan</h3>
+                <p>DDS, MSc • 10 Years Experience</p>
+              </div>
+            </article>
+
+            <article class="dentist-card reveal">
+              <div class="dentist-image">
+                <img
+                  src="images/dentists/dentist-3.jpg"
+                  alt="Dr. Htet Myat Htun"
+                />
+              </div>
+
+              <div class="dentist-info">
+                <span>COSMETIC DENTIST</span>
+                <h3>Dr. Htet Myat Htun</h3>
+                <p>DDS • 7 Years Experience</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--PATIENT REVIEWS -->
+
+      <section class="reviews section-padding">
+        <div class="container">
+          <div class="center-heading reveal">
+            <span class="section-label"> PATIENT REVIEWS </span>
+
+            <h2>What Our Patients Say</h2>
+          </div>
+
+          <div class="review-slider reveal">
+            <button
+              class="slider-button previous"
+              id="previousReview"
+              aria-label="Previous review"
+            >
+              ←
+            </button>
+
+            <div class="review-container">
+              <article class="review active-review">
+                <div class="quote-mark">“</div>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                  The staff were very friendly and professional. The dentist
+                  explained every step clearly and made the treatment
+                  comfortable.
+                </p>
+
+                <div class="review-author">
+                  <div class="review-avatar">AM</div>
+
+                  <div>
+                    <strong>Anna M.</strong>
+                    <span>Patient</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review">
+                <div class="quote-mark">“</div>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                  I had a very good experience at Dental Care Clinic. The clinic
+                  was clean and the staff were helpful throughout my visit.
+                </p>
+
+                <div class="review-author">
+                  <div class="review-avatar">JK</div>
+
+                  <div>
+                    <strong>John K.</strong>
+                    <span>Patient</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review">
+                <div class="quote-mark">“</div>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                  The appointment process was simple and the dental team
+                  provided excellent care. I would recommend the clinic to my
+                  family.
+                </p>
+
+                <div class="review-author">
+                  <div class="review-avatar">SL</div>
+
+                  <div>
+                    <strong>Sarah L.</strong>
+                    <span>Patient</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <button
+              class="slider-button next"
+              id="nextReview"
+              aria-label="Next review"
+            >
+              →
+            </button>
+          </div>
+
+          <div class="slider-dots" id="sliderDots">
+            <button class="dot active-dot" aria-label="Review 1"></button>
+
+            <button class="dot" aria-label="Review 2"></button>
+
+            <button class="dot" aria-label="Review 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPECIAL OFFER -->
+
+      <section class="offer-banner">
+        <div class="container offer-container">
+          <div class="offer-content">
+            <span class="offer-label"> SPECIAL OFFER </span>
+
+            <h2>Give Your Smile the Care It Deserves.</h2>
+
+            <p>
+              New patients can enjoy a special introductory dental check-up
+              offer.
+            </p>
+
+            <a href="contact.html" class="btn btn-white">
+              Book Your Visit
+              <span>→</span>
+            </a>
+          </div>
+
+          <div class="offer-decoration">
+            <div class="offer-circle circle-one"></div>
+            <div class="offer-circle circle-two"></div>
+
+            <span>🦷</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+
+      <section class="final-cta section-padding">
+        <div class="container final-cta-content reveal">
+          <span class="section-label"> READY TO VISIT US? </span>
+
+          <h2>Start Your Journey to a Healthier Smile</h2>
+
+          <p>
+            Schedule your appointment with our experienced dental team today.
+          </p>
+
+          <a href="contact.html" class="btn btn-primary">
+            Make an Appointment
+            <span>→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon">✚</span>
+
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <p>
+            Professional, safe and affordable dental care for a healthier and
+            more confident smile.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Dentists</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+
+          <ul>
+            <li><a href="offers.html">Offers & Reviews</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+
+          <ul class="contact-list">
+            <li>⌖ Yangon, Myanmar</li>
+
+            <li>☎ +95 9 123 456 789</li>
+
+            <li>✉ info@dentalcareclinic.com</li>
+
+            <li>◷ Mon - Sat: 9 AM - 6 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Dental Care Clinic. All Rights Reserved.</p>
+
+          <p>Professional Dental Care Since 2018</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS Files/effects.js"></script>
+    <script src="JS Files/appointment.js"></script>
+  </body>
+</html>

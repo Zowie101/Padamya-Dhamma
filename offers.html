@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offers & Reviews | Dental Care Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS Files/Essential.css" />
+    <link rel="stylesheet" href="CSS Files/Offers.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <!-- LOGO -->
+          <a href="home.html" class="logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <!-- MOBILE APPOINTMENT BUTTON -->
+          <div class="mobile-appointment">
+            <button
+              type="button"
+              class="appointment-toggle"
+              aria-label="View appointments"
+            >
+              <span class="appointment-icon">♡</span>
+              <span class="appointment-count">0</span>
+            </button>
+          </div>
+
+          <!-- MOBILE MENU BUTTON -->
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- NAVIGATION LINKS -->
+          <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Dentists</a></li>
+            <li><a href="offers.html" class="active">Offers & Reviews</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+
+            <!-- DESKTOP APPOINTMENT -->
+            <li class="appointment-menu">
+              <button
+                type="button"
+                class="appointment-toggle"
+                aria-label="View appointments"
+              >
+                <span class="appointment-icon">♡</span>
+                <span class="appointment-count">0</span>
+              </button>
+            </li>
+
+            <!-- BOOK APPOINTMENT -->
+            <li>
+              <a href="contact.html" class="nav-button"> Book Appointment </a>
+            </li>
+          </ul>
+
+          <!-- APPOINTMENT DROPDOWN -->
+          <div class="appointment-dropdown" id="appointmentDropdown">
+            <div class="appointment-dropdown-header">
+              <div>
+                <span class="section-label">MY APPOINTMENTS</span>
+                <h3>Your Bookings</h3>
+              </div>
+
+              <button
+                type="button"
+                class="appointment-close"
+                id="appointmentClose"
+                aria-label="Close appointments"
+              >
+                ×
+              </button>
+            </div>
+
+            <div class="appointment-list" id="appointmentList">
+              <div class="empty-appointments">
+                <div class="empty-icon">♡</div>
+                <h4>No appointments yet</h4>
+                <p>Your booked appointments will appear here.</p>
+
+                <a href="contact.html" class="btn btn-primary">
+                  Book an Appointment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="offers-hero">
+        <div class="container offers-hero-content">
+          <span class="section-label">SPECIAL OFFERS</span>
+          <h1>Better care, <span>better value.</span></h1>
+          <p>
+            Take advantage of our current dental offers and make caring for your
+            smile a little easier.
+          </p>
+
+          <div class="hero-rating">
+            <div class="stars">★★★★★</div>
+            <span>Trusted by 5,000+ patients</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- OFFERS -->
+      <section class="offers-section section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-label">CURRENT OFFERS</span>
+              <h2>Something good for your smile.</h2>
+            </div>
+            <p class="heading-description">
+              Our offers are designed to make essential and cosmetic dental care
+              more accessible.
+            </p>
+          </div>
+
+          <div class="offers-grid">
+            <!-- OFFER 1 -->
+            <article class="offer-card offer-featured">
+              <div class="offer-badge">MOST POPULAR</div>
+
+              <div class="offer-card-top">
+                <span class="offer-icon">✦</span>
+                <span class="offer-discount">SAVE 20%</span>
+              </div>
+
+              <h3>New Patient Smile Package</h3>
+
+              <p>
+                Start your dental journey with a complete check-up, consultation
+                and professional cleaning.
+              </p>
+
+              <div class="offer-price">
+                <span class="old-price">$150</span>
+                <strong>$120</strong>
+              </div>
+
+              <ul class="offer-list">
+                <li><span>✓</span> Comprehensive dental examination</li>
+                <li><span>✓</span> Professional cleaning</li>
+                <li><span>✓</span> Personal consultation</li>
+                <li><span>✓</span> Personalised care recommendations</li>
+              </ul>
+
+              <a
+                href="contact.html?service=General%20Dentistry"
+                class="btn btn-primary"
+              >
+                Claim This Offer <span>→</span>
+              </a>
+
+              <small class="offer-note">For new patients only.</small>
+            </article>
+
+            <!-- OFFER 2 -->
+            <article class="offer-card">
+              <div class="offer-card-top">
+                <span class="offer-icon">♡</span>
+                <span class="offer-discount">SAVE $50</span>
+              </div>
+
+              <h3>Smile Brightening</h3>
+
+              <p>
+                Give your smile a fresh boost with our professional teeth
+                whitening treatment.
+              </p>
+
+              <div class="offer-price">
+                <span class="old-price">$300</span>
+                <strong>$250</strong>
+              </div>
+
+              <ul class="offer-list">
+                <li><span>✓</span> Professional whitening consultation</li>
+                <li><span>✓</span> In-clinic whitening treatment</li>
+                <li><span>✓</span> Shade assessment</li>
+                <li><span>✓</span> Aftercare guidance</li>
+              </ul>
+
+              <a
+                href="contact.html?service=Cosmetic%20Dentistry"
+                class="btn btn-outline"
+              >
+                Claim This Offer <span>→</span>
+              </a>
+
+              <small class="offer-note">Limited appointments available.</small>
+            </article>
+
+            <!-- OFFER 3 -->
+            <article class="offer-card">
+              <div class="offer-card-top">
+                <span class="offer-icon">✓</span>
+                <span class="offer-discount">FREE</span>
+              </div>
+
+              <h3>Orthodontic Consultation</h3>
+
+              <p>
+                Thinking about straightening your smile? Begin with a
+                complimentary consultation with our orthodontist.
+              </p>
+
+              <div class="offer-price">
+                <strong>$0</strong>
+              </div>
+
+              <ul class="offer-list">
+                <li><span>✓</span> Initial orthodontic assessment</li>
+                <li><span>✓</span> Treatment discussion</li>
+                <li><span>✓</span> Smile goals consultation</li>
+                <li><span>✓</span> Treatment options explained</li>
+              </ul>
+
+              <a
+                href="contact.html?service=Orthodontics"
+                class="btn btn-outline"
+              >
+                Claim This Offer <span>→</span>
+              </a>
+
+              <small class="offer-note"
+                >Subject to appointment availability.</small
+              >
+            </article>
+          </div>
+
+          <div class="offer-terms">
+            <span>ⓘ</span>
+            <p>
+              Offers cannot be combined with other promotions. Please contact
+              our clinic for full terms and availability.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="reviews-section section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-label">PATIENT REVIEWS</span>
+              <h2>What our patients say.</h2>
+            </div>
+            <div class="overall-rating">
+              <strong>4.9</strong>
+              <div>
+                <div class="stars">★★★★★</div>
+                <span>Based on 320+ reviews</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews-grid">
+            <article class="review-card">
+              <div class="review-top">
+                <div class="review-person">
+                  <div class="review-avatar">EM</div>
+                  <div>
+                    <h3>Emma Morgan</h3>
+                    <span>Verified Patient</span>
+                  </div>
+                </div>
+                <span class="quote-mark">“</span>
+              </div>
+
+              <div class="review-stars">★★★★★</div>
+
+              <p>
+                "Everyone at Dental Care Clinic was incredibly friendly. The
+                dentist explained everything clearly and made me feel
+                comfortable throughout the appointment."
+              </p>
+
+              <span class="review-date">2 weeks ago</span>
+            </article>
+
+            <article class="review-card review-highlight">
+              <div class="review-top">
+                <div class="review-person">
+                  <div class="review-avatar">DL</div>
+                  <div>
+                    <h3>Daniel Lee</h3>
+                    <span>Verified Patient</span>
+                  </div>
+                </div>
+                <span class="quote-mark">“</span>
+              </div>
+
+              <div class="review-stars">★★★★★</div>
+
+              <p>
+                "I had been nervous about getting dental treatment, but the team
+                completely changed that experience. Professional, welcoming and
+                genuinely caring."
+              </p>
+
+              <span class="review-date">1 month ago</span>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="review-person">
+                  <div class="review-avatar">SL</div>
+                  <div>
+                    <h3>Sophia Lewis</h3>
+                    <span>Verified Patient</span>
+                  </div>
+                </div>
+                <span class="quote-mark">“</span>
+              </div>
+
+              <div class="review-stars">★★★★★</div>
+
+              <p>
+                "The clinic feels modern and welcoming, and booking was really
+                simple. My cleaning was comfortable and the whole team was
+                lovely."
+              </p>
+
+              <span class="review-date">1 month ago</span>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="review-person">
+                  <div class="review-avatar">JW</div>
+                  <div>
+                    <h3>James Wilson</h3>
+                    <span>Verified Patient</span>
+                  </div>
+                </div>
+                <span class="quote-mark">“</span>
+              </div>
+
+              <div class="review-stars">★★★★★</div>
+
+              <p>
+                "Dr. Carter took the time to understand what I wanted from my
+                smile treatment. The result looks natural and I couldn't be
+                happier."
+              </p>
+
+              <span class="review-date">2 months ago</span>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="review-person">
+                  <div class="review-avatar">AM</div>
+                  <div>
+                    <h3>Amelia Moore</h3>
+                    <span>Verified Patient</span>
+                  </div>
+                </div>
+                <span class="quote-mark">“</span>
+              </div>
+
+              <div class="review-stars">★★★★★</div>
+
+              <p>
+                "From reception to treatment, everything felt organised and
+                professional. I finally feel confident about keeping up with my
+                regular dental visits."
+              </p>
+
+              <span class="review-date">2 months ago</span>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="review-person">
+                  <div class="review-avatar">OB</div>
+                  <div>
+                    <h3>Oliver Brown</h3>
+                    <span>Verified Patient</span>
+                  </div>
+                </div>
+                <span class="quote-mark">“</span>
+              </div>
+
+              <div class="review-stars">★★★★★</div>
+
+              <p>
+                "Excellent experience from start to finish. The staff were kind,
+                the appointment started on time and I knew exactly what to
+                expect."
+              </p>
+
+              <span class="review-date">3 months ago</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEW CTA -->
+      <section class="review-cta">
+        <div class="container review-cta-content">
+          <div>
+            <span class="section-label">YOUR EXPERIENCE MATTERS</span>
+            <h2>Ready to look after your smile?</h2>
+            <p>
+              Join our growing community of happy Dental Care Clinic patients.
+            </p>
+          </div>
+
+          <a href="contact.html" class="btn btn-white">
+            Book an Appointment <span>→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <p>
+            Modern dental care with a gentle, patient-first approach. Helping
+            you feel confident about your smile.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter">x</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Our Dentists</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li>123 Smile Avenue</li>
+            <li>Dental City, DC 10001</li>
+            <li>+1 555 123 4567</li>
+            <li>hello@dentalcare.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Dental Care Clinic. All rights reserved.</p>
+          <p>Designed for better smiles.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS Files/effects.js"></script>
+    <script src="JS Files/appointment.js"></script>
+  </body>
+</html>

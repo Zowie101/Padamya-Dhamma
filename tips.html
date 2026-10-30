@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Helpful dental care tips from Dental Care Clinic for maintaining a healthy and confident smile."
+    />
+    <title>Dental Tips | Dental Care Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS Files/Essential.css" />
+    <link rel="stylesheet" href="CSS Files/Tips.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <!-- LOGO -->
+          <a href="home.html" class="logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <!-- MOBILE APPOINTMENT BUTTON -->
+          <div class="mobile-appointment">
+            <button
+              type="button"
+              class="appointment-toggle"
+              aria-label="View appointments"
+            >
+              <span class="appointment-icon">♡</span>
+              <span class="appointment-count">0</span>
+            </button>
+          </div>
+
+          <!-- MOBILE MENU BUTTON -->
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- NAVIGATION LINKS -->
+          <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Dentists</a></li>
+            <li><a href="offers.html">Offers & Reviews</a></li>
+            <li><a href="tips.html" class="active">Dental Tips</a></li>
+
+            <!-- DESKTOP APPOINTMENT -->
+            <li class="appointment-menu">
+              <button
+                type="button"
+                class="appointment-toggle"
+                aria-label="View appointments"
+              >
+                <span class="appointment-icon">♡</span>
+                <span class="appointment-count">0</span>
+              </button>
+            </li>
+
+            <!-- BOOK APPOINTMENT -->
+            <li>
+              <a href="contact.html" class="nav-button"> Book Appointment </a>
+            </li>
+          </ul>
+
+          <!-- SHARED APPOINTMENT DROPDOWN -->
+          <div class="appointment-dropdown" id="appointmentDropdown">
+            <div class="appointment-dropdown-header">
+              <div>
+                <span class="section-label">MY APPOINTMENTS</span>
+                <h3>Your Bookings</h3>
+              </div>
+
+              <button
+                type="button"
+                class="appointment-close"
+                id="appointmentClose"
+                aria-label="Close appointments"
+              >
+                ×
+              </button>
+            </div>
+
+            <div class="appointment-list" id="appointmentList">
+              <div class="empty-appointments">
+                <div class="empty-icon">♡</div>
+                <h4>No appointments yet</h4>
+                <p>Your booked appointments will appear here.</p>
+
+                <a href="contact.html" class="btn btn-primary">
+                  Book an Appointment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="tips-hero">
+        <div class="container tips-hero-content">
+          <span class="section-label">DENTAL TIPS</span>
+          <h1>Small habits create <span>healthy smiles.</span></h1>
+          <p>
+            Simple everyday dental care tips to help you maintain better oral
+            hygiene and keep your smile looking its best.
+          </p>
+        </div>
+      </section>
+
+      <!-- FEATURED TIP -->
+
+      <section class="featured-tip section-padding">
+        <div class="container featured-grid">
+          <div class="featured-image">
+            <img
+              src="images/tips/tip-featured.jpg"
+              alt="Person brushing teeth properly"
+            />
+            <div class="featured-badge">Featured Tip</div>
+          </div>
+
+          <div class="featured-content">
+            <span class="section-label">EVERYDAY CARE</span>
+            <h2>
+              The foundation of a healthy smile starts with your daily routine.
+            </h2>
+            <p>
+              Consistent dental care doesn't have to be complicated. A few
+              simple habits each day can make a meaningful difference in
+              maintaining good oral hygiene and protecting your teeth.
+            </p>
+
+            <ul class="featured-list">
+              <li><span>✓</span> Brush your teeth twice every day</li>
+              <li><span>✓</span> Replace your toothbrush regularly</li>
+              <li><span>✓</span> Clean between your teeth daily</li>
+              <li><span>✓</span> Visit your dentist for regular check-ups</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary"
+              >Book a Check-up <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- TIPS GRID -->
+
+      <section class="tips-section section-padding">
+        <div class="container">
+          <div class="center-heading">
+            <span class="section-label">HELPFUL GUIDES</span>
+            <h2>Simple tips for everyday dental care.</h2>
+            <p>
+              Explore practical advice that helps you build healthier habits and
+              maintain a confident smile.
+            </p>
+          </div>
+
+          <div class="tips-grid">
+            <article class="tip-card">
+              <div class="tip-image">
+                <img
+                  src="images/tips/tip-brushing.jpg"
+                  alt="Person brushing teeth"
+                />
+              </div>
+              <div class="tip-content">
+                <span class="tip-category">ORAL HYGIENE</span>
+                <h3>Brush the right way.</h3>
+                <p>
+                  Use gentle circular motions and take enough time to clean
+                  every area of your mouth instead of brushing quickly.
+                </p>
+                <a href="tip-detail.html?tip=brushing" class="text-button"
+                  >Read Tip <span>→</span></a
+                >
+              </div>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-image">
+                <img
+                  src="images/tips/tip-floss.jpg"
+                  alt="Dental floss being used"
+                />
+              </div>
+              <div class="tip-content">
+                <span class="tip-category">HEALTHY HABITS</span>
+                <h3>Don't skip flossing.</h3>
+                <p>
+                  Cleaning between your teeth is an important part of
+                  maintaining a cleaner and healthier smile every day.
+                </p>
+                <a href="tip-detail.html?tip=flossing" class="text-button"
+                  >Read Tip <span>→</span></a
+                >
+              </div>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-image">
+                <img
+                  src="images/tips/tip-food.jpg"
+                  alt="Healthy foods for teeth"
+                />
+              </div>
+              <div class="tip-content">
+                <span class="tip-category">NUTRITION</span>
+                <h3>Choose smile-friendly foods.</h3>
+                <p>
+                  A balanced diet with nutritious foods and plenty of water can
+                  support your overall dental health and wellbeing.
+                </p>
+                <a href="tip-detail.html?tip=nutrition" class="text-button"
+                  >Read Tip <span>→</span></a
+                >
+              </div>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-image">
+                <img
+                  src="images/tips/tip-checkup.jpg"
+                  alt="Dentist checking patient teeth"
+                />
+              </div>
+              <div class="tip-content">
+                <span class="tip-category">PREVENTIVE CARE</span>
+                <h3>Keep up with regular visits.</h3>
+                <p>
+                  Routine dental appointments help you stay on top of your oral
+                  health and address concerns before they become bigger
+                  problems.
+                </p>
+                <a href="tip-detail.html?tip=checkups" class="text-button"
+                  >Read Tip <span>→</span></a
+                >
+              </div>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-image">
+                <img
+                  src="images/tips/tip-sensitive.jpg"
+                  alt="Woman holding her cheek with sensitive teeth"
+                />
+              </div>
+              <div class="tip-content">
+                <span class="tip-category">TOOTH CARE</span>
+                <h3>Look after sensitive teeth.</h3>
+                <p>
+                  If certain foods or drinks make your teeth feel uncomfortable,
+                  speak with your dentist about suitable care options.
+                </p>
+                <a href="tip-detail.html?tip=sensitivity" class="text-button"
+                  >Read Tip <span>→</span></a
+                >
+              </div>
+            </article>
+
+            <article class="tip-card">
+              <div class="tip-image">
+                <img
+                  src="images/tips/tip-kid.jpg"
+                  alt="Child brushing teeth with parent"
+                />
+              </div>
+              <div class="tip-content">
+                <span class="tip-category">CHILDREN</span>
+                <h3>Make brushing fun.</h3>
+                <p>
+                  Creating a positive daily brushing routine helps children
+                  develop healthy habits that can last a lifetime.
+                </p>
+                <a href="tip-detail.html?tip=children" class="text-button"
+                  >Read Tip <span>→</span></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DAILY ROUTINE -->
+
+      <section class="routine-section section-padding" id="daily-routine">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-label">DAILY ROUTINE</span>
+              <h2>A healthier smile in four simple steps.</h2>
+            </div>
+          </div>
+
+          <div class="routine-grid">
+            <div class="routine-card">
+              <div class="routine-number">01</div>
+              <div>
+                <h3>Morning Brush</h3>
+                <p>
+                  Start your day by brushing thoroughly as part of your morning
+                  routine.
+                </p>
+              </div>
+            </div>
+
+            <div class="routine-card">
+              <div class="routine-number">02</div>
+              <div>
+                <h3>Stay Hydrated</h3>
+                <p>
+                  Drink plenty of water throughout the day to help keep your
+                  mouth feeling fresh.
+                </p>
+              </div>
+            </div>
+
+            <div class="routine-card">
+              <div class="routine-number">03</div>
+              <div>
+                <h3>Clean Between Teeth</h3>
+                <p>
+                  Make time to floss or clean between your teeth as part of your
+                  evening care.
+                </p>
+              </div>
+            </div>
+
+            <div class="routine-card">
+              <div class="routine-number">04</div>
+              <div>
+                <h3>Night-time Care</h3>
+                <p>
+                  Finish the day with a complete brushing routine before going
+                  to sleep.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+
+      <section class="tips-faq section-padding">
+        <div class="container faq-container">
+          <div class="center-heading">
+            <span class="section-label">COMMON QUESTIONS</span>
+            <h2>Quick dental care reminders.</h2>
+            <p>Helpful answers to common everyday dental care questions.</p>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How often should I visit the dentist?</h3>
+                <span>+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Regular dental visits are recommended as part of maintaining
+                  good oral health, and your dentist can advise a schedule
+                  that's suitable for your individual needs.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Why is brushing twice a day important?</h3>
+                <span>+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Brushing consistently helps keep your mouth clean by removing
+                  everyday buildup and supporting good oral hygiene as part of
+                  your daily routine.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What should I do if I have tooth discomfort?</h3>
+                <span>+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  If you experience ongoing discomfort or notice changes in your
+                  teeth or gums, it's a good idea to arrange a dental
+                  appointment for professional advice.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Are children's dental visits important?</h3>
+                <span>+</span>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Yes. Early dental care helps children become familiar with
+                  dental visits while encouraging healthy brushing and oral
+                  hygiene habits.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+
+      <section class="tips-cta">
+        <div class="container tips-cta-content">
+          <div>
+            <span class="section-label">LOOKING AFTER YOUR SMILE</span>
+            <h2>
+              Healthy habits begin with great <br />
+              dental care.
+            </h2>
+            <p>
+              Our friendly dental team is here whenever you're ready for your
+              next check-up or consultation.
+            </p>
+          </div>
+          <a href="contact.html" class="btn btn-white"
+            >Book an Appointment <span>→</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">Dental Care<small>CLINIC</small></span>
+          </a>
+          <p>
+            Modern dental care with a gentle, patient-first approach. Helping
+            you feel confident about your smile.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter">x</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Our Dentists</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li>123 Smile Avenue</li>
+            <li>Dental City, DC 10001</li>
+            <li>+1 555 123 4567</li>
+            <li>hello@dentalcare.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Dental Care Clinic. All rights reserved.</p>
+          <p>Designed for better smiles.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS Files/effects.js"></script>
+    <script src="JS Files/appointment.js"></script>
+  </body>
+</html>

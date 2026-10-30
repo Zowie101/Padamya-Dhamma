@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn more about BrightSmile Dental Care, our team, values, and commitment to providing comfortable and quality dental care."
+    />
+    <title>About Us | Dental Care Clinic</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS Files/Essential.css" />
+    <link rel="stylesheet" href="CSS Files/About.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <!-- LOGO -->
+          <a href="home.html" class="logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <!-- MOBILE APPOINTMENT BUTTON -->
+          <div class="mobile-appointment">
+            <button
+              type="button"
+              class="appointment-toggle"
+              aria-label="View appointments"
+            >
+              <span class="appointment-icon">♡</span>
+              <span class="appointment-count">0</span>
+            </button>
+          </div>
+
+          <!-- MOBILE MENU BUTTON -->
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- NAVIGATION LINKS -->
+          <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Dentists</a></li>
+            <li><a href="offers.html">Offers & Reviews</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+
+            <!-- DESKTOP APPOINTMENT -->
+            <li class="appointment-menu">
+              <button
+                type="button"
+                class="appointment-toggle"
+                aria-label="View appointments"
+              >
+                <span class="appointment-icon">♡</span>
+                <span class="appointment-count">0</span>
+              </button>
+            </li>
+
+            <!-- BOOK APPOINTMENT -->
+            <li>
+              <a href="contact.html" class="nav-button"> Book Appointment </a>
+            </li>
+          </ul>
+
+          <!-- SHARED APPOINTMENT DROPDOWN -->
+          <div class="appointment-dropdown" id="appointmentDropdown">
+            <div class="appointment-dropdown-header">
+              <div>
+                <span class="section-label">MY APPOINTMENTS</span>
+                <h3>Your Bookings</h3>
+              </div>
+
+              <button
+                type="button"
+                class="appointment-close"
+                id="appointmentClose"
+                aria-label="Close appointments"
+              >
+                ×
+              </button>
+            </div>
+
+            <div class="appointment-list" id="appointmentList">
+              <div class="empty-appointments">
+                <div class="empty-icon">♡</div>
+                <h4>No appointments yet</h4>
+                <p>Your booked appointments will appear here.</p>
+
+                <a href="contact.html" class="btn btn-primary">
+                  Book an Appointment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="about-hero">
+        <div class="container about-hero-container">
+          <div class="about-hero-content reveal">
+            <span class="section-label">ABOUT DENTAL CARE</span>
+            <h1>
+              Caring for your smile with <span>confidence and compassion.</span>
+            </h1>
+            <p>
+              We believe dental care should feel comfortable, personal, and easy
+              to understand. Our team is dedicated to helping every patient
+              achieve a healthy smile in a welcoming environment.
+            </p>
+            <a href="contact.html" class="btn btn-primary"
+              >Book an Appointment <span>→</span></a
+            >
+          </div>
+
+          <div class="about-hero-image reveal">
+            <img
+              src="images/hero/hero-about.jpg"
+              alt="Dentist speaking with a patient in a modern dental clinic"
+            />
+            <div class="hero-stat-card">
+              <strong>15+</strong>
+              <span>Years of<br />Trusted Care</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR STORY -->
+      <section class="section-padding story-section">
+        <div class="container two-column about-story">
+          <div class="story-image reveal">
+            <img
+              src="images/clinic.jpg"
+              alt="Bright and modern BrightSmile dental clinic"
+            />
+            <div class="image-accent"></div>
+          </div>
+
+          <div class="story-content reveal">
+            <span class="section-label">OUR STORY</span>
+            <h2>A dental experience built around <span>you.</span></h2>
+            <p>
+              Dental Care was created with a simple idea: visiting the dentist
+              should be a positive experience, not something to worry about.
+            </p>
+            <p>
+              From preventive check-ups to advanced treatments, we combine
+              modern dental techniques with a gentle and patient-focused
+              approach. Our goal is to make every visit comfortable while
+              helping you maintain a healthy smile for years to come.
+            </p>
+
+            <ul class="check-list">
+              <li><span>✓</span> Patient-first approach</li>
+              <li><span>✓</span> Modern dental technology</li>
+              <li><span>✓</span> Friendly and experienced team</li>
+              <li><span>✓</span> Comfortable clinic environment</li>
+            </ul>
+
+            <a href="services.html" class="text-button"
+              >Explore our services <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- MISSION & VISION -->
+      <section class="section-padding values-section">
+        <div class="container">
+          <div class="center-heading reveal">
+            <span class="section-label">WHAT WE STAND FOR</span>
+            <h2>Our mission is your <span>healthier smile.</span></h2>
+            <p>
+              Every decision we make is guided by the same goal: providing
+              quality dental care while making our patients feel respected,
+              comfortable, and confident.
+            </p>
+          </div>
+
+          <div class="values-grid">
+            <article class="value-card reveal">
+              <div class="value-icon">✦</div>
+              <span class="value-number">01</span>
+              <h3>Our Mission</h3>
+              <p>
+                To provide accessible, personalized dental care that improves
+                oral health and creates positive experiences for every patient.
+              </p>
+            </article>
+
+            <article class="value-card reveal">
+              <div class="value-icon">✦</div>
+              <span class="value-number">02</span>
+              <h3>Our Vision</h3>
+              <p>
+                To become a trusted dental care destination where modern
+                treatment and genuine human care come together.
+              </p>
+            </article>
+
+            <article class="value-card reveal">
+              <div class="value-icon">✦</div>
+              <span class="value-number">03</span>
+              <h3>Our Values</h3>
+              <p>
+                We value honesty, compassion, professionalism, continuous
+                learning, and putting our patients first.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section class="section-padding about-features">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <span class="section-label">WHY DENTALCARE</span>
+              <h2>Care you can feel good about.</h2>
+            </div>
+            <p>
+              From your first visit to your long-term care, we're here to make
+              dentistry simpler and more comfortable.
+            </p>
+          </div>
+
+          <div class="about-features-grid">
+            <article class="about-feature reveal">
+              <div class="about-feature-icon">01</div>
+              <div>
+                <h3>Experienced Professionals</h3>
+                <p>
+                  Our dental team brings knowledge, skill, and a caring approach
+                  to every appointment.
+                </p>
+              </div>
+            </article>
+
+            <article class="about-feature reveal">
+              <div class="about-feature-icon">02</div>
+              <div>
+                <h3>Modern Technology</h3>
+                <p>
+                  We use modern equipment and techniques to support accurate and
+                  efficient dental care.
+                </p>
+              </div>
+            </article>
+
+            <article class="about-feature reveal">
+              <div class="about-feature-icon">03</div>
+              <div>
+                <h3>Comfortable Environment</h3>
+                <p>
+                  Our clinic is designed to feel calm, welcoming, and
+                  comfortable from the moment you arrive.
+                </p>
+              </div>
+            </article>
+
+            <article class="about-feature reveal">
+              <div class="about-feature-icon">04</div>
+              <div>
+                <h3>Personalized Care</h3>
+                <p>
+                  We take time to understand your needs and explain your
+                  treatment options clearly.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATISTICS -->
+      <section class="about-stats">
+        <div class="container stats-grid">
+          <div class="stat-item reveal">
+            <strong>15+</strong>
+            <span>Years of Experience</span>
+          </div>
+          <div class="stat-item reveal">
+            <strong>8K+</strong>
+            <span>Happy Patients</span>
+          </div>
+          <div class="stat-item reveal">
+            <strong>12</strong>
+            <span>Dental Specialists</span>
+          </div>
+          <div class="stat-item reveal">
+            <strong>98%</strong>
+            <span>Patient Satisfaction</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section-padding about-cta">
+        <div class="container">
+          <div class="about-cta-content reveal">
+            <span class="section-label">YOUR SMILE MATTERS</span>
+            <h2>Ready to take care of your smile?</h2>
+            <p>
+              Whether you need a routine check-up or want to discuss a
+              treatment, our friendly team is ready to help.
+            </p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary"
+                >Book an Appointment <span>→</span></a
+              >
+              <a href="services.html" class="btn btn-outline">View Services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              DENTAL CARE
+              <small>Clinic</small>
+            </span>
+          </a>
+          <p>
+            Modern dental care with a gentle, patient-first approach. Helping
+            you feel confident about your smile.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter">x</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Our Dentists</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li>123 Smile Avenue</li>
+            <li>Dental City, DC 10001</li>
+            <li>+1 555 123 4567</li>
+            <li>hello@brightsmile.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Dental Care Clinic. All rights reserved.</p>
+          <p>Designed for better smiles.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS Files/effects.js"></script>
+    <script src="JS Files/appointment.js"></script>
+  </body>
+</html>

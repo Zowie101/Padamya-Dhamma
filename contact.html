@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book an appointment with Dental Care Clinic. Choose your service, dentist, date and preferred appointment time."
+    />
+    <title>Book an Appointment | Dental Care Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS Files/Essential.css" />
+    <link rel="stylesheet" href="CSS Files/Contact.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <!-- LOGO -->
+          <a href="home.html" class="logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <!-- MOBILE APPOINTMENT BUTTON -->
+          <div class="mobile-appointment">
+            <button
+              type="button"
+              class="appointment-toggle"
+              aria-label="View appointments"
+            >
+              <span class="appointment-icon">♡</span>
+              <span class="appointment-count">0</span>
+            </button>
+          </div>
+
+          <!-- MOBILE MENU BUTTON -->
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- NAVIGATION LINKS -->
+          <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Dentists</a></li>
+            <li><a href="offers.html">Offers & Reviews</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+
+            <!-- DESKTOP APPOINTMENT -->
+            <li class="appointment-menu">
+              <button
+                type="button"
+                class="appointment-toggle"
+                aria-label="View appointments"
+              >
+                <span class="appointment-icon">♡</span>
+                <span class="appointment-count">0</span>
+              </button>
+            </li>
+
+            <!-- BOOK APPOINTMENT -->
+            <li>
+              <a href="contact.html" class="nav-button"> Book Appointment </a>
+            </li>
+          </ul>
+
+          <!-- SHARED APPOINTMENT DROPDOWN -->
+          <div class="appointment-dropdown" id="appointmentDropdown">
+            <div class="appointment-dropdown-header">
+              <div>
+                <span class="section-label">MY APPOINTMENTS</span>
+                <h3>Your Bookings</h3>
+              </div>
+
+              <button
+                type="button"
+                class="appointment-close"
+                id="appointmentClose"
+                aria-label="Close appointments"
+              >
+                ×
+              </button>
+            </div>
+
+            <div class="appointment-list" id="appointmentList">
+              <div class="empty-appointments">
+                <div class="empty-icon">♡</div>
+                <h4>No appointments yet</h4>
+                <p>Your booked appointments will appear here.</p>
+
+                <a href="contact.html" class="btn btn-primary">
+                  Book an Appointment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="booking-hero">
+        <div class="container booking-hero-content">
+          <span class="section-label">APPOINTMENTS</span>
+          <h1>Book your dental visit <span>with ease.</span></h1>
+          <p>
+            Choose your service, preferred dentist, date and time. Your
+            appointment will be confirmed on screen instantly.
+          </p>
+        </div>
+      </section>
+
+      <!-- BOOKING AREA -->
+      <section class="booking-section section-padding" id="appointment-form">
+        <div class="container booking-layout">
+          <!-- BOOKING FORM -->
+          <div class="booking-card">
+            <div class="booking-header">
+              <div>
+                <span class="section-label">BOOK AN APPOINTMENT</span>
+                <h2>Let's schedule your visit.</h2>
+              </div>
+              <span class="step-indicator"
+                >Step <strong id="currentStep">1</strong> of 3</span
+              >
+            </div>
+
+            <form id="appointmentForm">
+              <!-- STEP 1 -->
+              <div class="booking-step active" data-step="1">
+                <div class="step-title">
+                  <span>01</span>
+                  <div>
+                    <h3>Choose your appointment</h3>
+                    <p>Select a service, dentist, date and time.</p>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="form-group full-width">
+                    <label for="service">Dental Service</label>
+                    <select id="service" name="service" required>
+                      <option value="">Select a service</option>
+                      <option value="General Dentistry">
+                        General Dentistry
+                      </option>
+                      <option value="Cosmetic Dentistry">
+                        Cosmetic Dentistry
+                      </option>
+                      <option value="Restorative Dentistry">
+                        Restorative Dentistry
+                      </option>
+                      <option value="Orthodontics">Orthodontics</option>
+                      <option value="Children's Dentistry">
+                        Children's Dentistry
+                      </option>
+                      <option value="Emergency Dentistry">
+                        Emergency Dentistry
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="dentist">Preferred Dentist</label>
+                    <select id="dentist" name="dentist" required>
+                      <option value="">Select a dentist</option>
+                      <option value="Dr. Sarah Mitchell">
+                        Dr. Sarah Mitchell
+                      </option>
+                      <option value="Dr. James Carter">Dr. James Carter</option>
+                      <option value="Dr. Emily Wilson">Dr. Emily Wilson</option>
+                      <option value="Dr. Daniel Lee">Dr. Daniel Lee</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="appointmentDate">Preferred Date</label>
+                    <input
+                      type="date"
+                      id="appointmentDate"
+                      name="appointmentDate"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>Available Time</label>
+                    <div class="time-slots" id="timeSlots">
+                      <button
+                        type="button"
+                        class="time-slot"
+                        data-time="09:00 AM"
+                      >
+                        09:00 AM
+                      </button>
+                      <button
+                        type="button"
+                        class="time-slot"
+                        data-time="10:00 AM"
+                      >
+                        10:00 AM
+                      </button>
+                      <button
+                        type="button"
+                        class="time-slot"
+                        data-time="11:00 AM"
+                      >
+                        11:00 AM
+                      </button>
+                      <button
+                        type="button"
+                        class="time-slot"
+                        data-time="01:00 PM"
+                      >
+                        01:00 PM
+                      </button>
+                      <button
+                        type="button"
+                        class="time-slot"
+                        data-time="02:00 PM"
+                      >
+                        02:00 PM
+                      </button>
+                      <button
+                        type="button"
+                        class="time-slot"
+                        data-time="03:00 PM"
+                      >
+                        03:00 PM
+                      </button>
+                      <button
+                        type="button"
+                        class="time-slot"
+                        data-time="04:00 PM"
+                      >
+                        04:00 PM
+                      </button>
+                    </div>
+                    <input
+                      type="hidden"
+                      id="selectedTime"
+                      name="selectedTime"
+                    />
+                    <span class="field-error" id="timeError"></span>
+                  </div>
+                </div>
+
+                <div class="step-actions">
+                  <button
+                    type="button"
+                    class="btn btn-primary next-step"
+                    data-next="2"
+                  >
+                    Continue <span>→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- STEP 2 -->
+              <div class="booking-step" data-step="2">
+                <div class="step-title">
+                  <span>02</span>
+                  <div>
+                    <h3>Your information</h3>
+                    <p>Tell us how we can contact you.</p>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="Your first name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Your last name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="+1 555 123 4567"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label for="message"
+                      >Additional Notes <span>(Optional)</span></label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Tell us anything we should know before your visit..."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="step-actions">
+                  <button
+                    type="button"
+                    class="btn btn-outline prev-step"
+                    data-prev="1"
+                  >
+                    <span>←</span> Back
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary next-step"
+                    data-next="3"
+                  >
+                    Review Appointment <span>→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- STEP 3 -->
+              <div class="booking-step" data-step="3">
+                <div class="step-title">
+                  <span>03</span>
+                  <div>
+                    <h3>Review your appointment</h3>
+                    <p>Please check your details before confirming.</p>
+                  </div>
+                </div>
+
+                <div class="review-box">
+                  <div class="review-row">
+                    <span>Service</span>
+                    <strong id="reviewService">—</strong>
+                  </div>
+                  <div class="review-row">
+                    <span>Dentist</span>
+                    <strong id="reviewDentist">—</strong>
+                  </div>
+                  <div class="review-row">
+                    <span>Date</span>
+                    <strong id="reviewDate">—</strong>
+                  </div>
+                  <div class="review-row">
+                    <span>Time</span>
+                    <strong id="reviewTime">—</strong>
+                  </div>
+                  <div class="review-row">
+                    <span>Patient</span>
+                    <strong id="reviewPatient">—</strong>
+                  </div>
+                  <div class="review-row">
+                    <span>Contact</span>
+                    <strong id="reviewContact">—</strong>
+                  </div>
+                </div>
+
+                <div class="booking-note">
+                  <span>ⓘ</span>
+                  <p>
+                    This is a visual appointment booking demo. No information is
+                    stored or submitted.
+                  </p>
+                </div>
+
+                <div class="step-actions">
+                  <button
+                    type="button"
+                    class="btn btn-outline prev-step"
+                    data-prev="2"
+                  >
+                    <span>←</span> Back
+                  </button>
+                  <button type="submit" class="btn btn-primary">
+                    Confirm Appointment <span>✓</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- SUCCESS -->
+            <div class="booking-success" id="bookingSuccess">
+              <div class="success-icon">✓</div>
+              <span class="section-label">APPOINTMENT CONFIRMED</span>
+              <h2>You're all booked!</h2>
+              <p>
+                Your appointment has been confirmed for the time selected below.
+              </p>
+
+              <div class="success-details">
+                <div>
+                  <span>Service</span>
+                  <strong id="successService">—</strong>
+                </div>
+                <div>
+                  <span>Dentist</span>
+                  <strong id="successDentist">—</strong>
+                </div>
+                <div>
+                  <span>Date</span>
+                  <strong id="successDate">—</strong>
+                </div>
+                <div>
+                  <span>Time</span>
+                  <strong id="successTime">—</strong>
+                </div>
+              </div>
+
+              <p class="success-message">
+                Thank you for choosing Dental Care Clinic. We look forward to
+                seeing you.
+              </p>
+
+              <button type="button" class="btn btn-outline" id="newBooking">
+                Make Another Appointment
+              </button>
+            </div>
+          </div>
+
+          <!-- SIDEBAR -->
+          <aside class="booking-sidebar">
+            <div class="sidebar-card clinic-info-card">
+              <div class="sidebar-icon">✦</div>
+              <span class="section-label">DENTAL CARE CLINIC</span>
+              <h3>We're here for your smile.</h3>
+              <p>
+                Our friendly team is ready to help you find the right care for
+                your dental needs.
+              </p>
+
+              <div class="clinic-details">
+                <div>
+                  <span>⌖</span>
+                  <p>123 Smile Avenue<br />Dental City, DC 10001</p>
+                </div>
+                <div>
+                  <span>☎</span>
+                  <p>+1 555 123 4567</p>
+                </div>
+                <div>
+                  <span>✉</span>
+                  <p>hello@dentalcare.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-card hours-card">
+              <h3>Opening Hours</h3>
+
+              <div class="hours-row">
+                <span>Monday – Friday</span>
+                <strong>9:00 AM – 5:00 PM</strong>
+              </div>
+
+              <div class="hours-row">
+                <span>Saturday</span>
+                <strong>9:00 AM – 1:00 PM</strong>
+              </div>
+
+              <div class="hours-row closed">
+                <span>Sunday</span>
+                <strong>Closed</strong>
+              </div>
+            </div>
+
+            <div class="emergency-card">
+              <div class="emergency-icon">!</div>
+              <div>
+                <strong>Dental Emergency?</strong>
+                <p>Contact our clinic directly for urgent dental concerns.</p>
+                <a href="tel:+15551234567">Call +1 555 123 4567</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+          <p>
+            Modern dental care with a gentle, patient-first approach. Helping
+            you feel confident about your smile.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter">x</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Our Dentists</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li>123 Smile Avenue</li>
+            <li>Dental City, DC 10001</li>
+            <li>+1 555 123 4567</li>
+            <li>hello@dentalcare.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Dental Care Clinic. All rights reserved.</p>
+          <p>Designed for better smiles.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS Files/effects.js"></script>
+    <script src="JS Files/contact.js"></script>
+    <script src="JS Files/appointment.js"></script>
+  </body>
+</html>

@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Dental Care Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS Files/Essential.css" />
+    <link rel="stylesheet" href="CSS Files/Services.Css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <!-- LOGO -->
+          <a href="home.html" class="logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <!-- MOBILE APPOINTMENT BUTTON -->
+          <div class="mobile-appointment">
+            <button
+              type="button"
+              class="appointment-toggle"
+              aria-label="View appointments"
+            >
+              <span class="appointment-icon">♡</span>
+              <span class="appointment-count">0</span>
+            </button>
+          </div>
+
+          <!-- MOBILE MENU BUTTON -->
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- NAVIGATION LINKS -->
+          <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="dentists.html">Dentists</a></li>
+            <li><a href="offers.html">Offers & Reviews</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+
+            <!-- DESKTOP APPOINTMENT -->
+            <li class="appointment-menu">
+              <button
+                type="button"
+                class="appointment-toggle"
+                aria-label="View appointments"
+              >
+                <span class="appointment-icon">♡</span>
+                <span class="appointment-count">0</span>
+              </button>
+            </li>
+
+            <!-- BOOK APPOINTMENT -->
+            <li>
+              <a href="contact.html" class="nav-button"> Book Appointment </a>
+            </li>
+          </ul>
+
+          <!-- SHARED APPOINTMENT DROPDOWN -->
+          <div class="appointment-dropdown" id="appointmentDropdown">
+            <div class="appointment-dropdown-header">
+              <div>
+                <span class="section-label">MY APPOINTMENTS</span>
+                <h3>Your Bookings</h3>
+              </div>
+
+              <button
+                type="button"
+                class="appointment-close"
+                id="appointmentClose"
+                aria-label="Close appointments"
+              >
+                ×
+              </button>
+            </div>
+
+            <div class="appointment-list" id="appointmentList">
+              <div class="empty-appointments">
+                <div class="empty-icon">♡</div>
+                <h4>No appointments yet</h4>
+                <p>Your booked appointments will appear here.</p>
+
+                <a href="contact.html" class="btn btn-primary">
+                  Book an Appointment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="services-hero">
+        <div class="container services-hero-container">
+          <div class="services-hero-content reveal">
+            <span class="section-label">OUR SERVICES</span>
+            <h1>Complete dental care for <span>healthier smile.</span></h1>
+            <p>
+              From regular check-ups to cosmetic and restorative treatments, our
+              team provides personalized dental care designed around your needs.
+            </p>
+            <a href="contact.html" class="btn btn-primary"
+              >Book an Appointment <span>→</span></a
+            >
+          </div>
+
+          <div class="services-hero-card reveal">
+            <div class="hero-card-icon">✦</div>
+            <span>PERSONALIZED CARE</span>
+            <h3>Everything your smile needs, in one place.</h3>
+            <p>
+              Our friendly team combines modern techniques with a comfortable,
+              patient-first experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES INTRO -->
+      <section class="section-padding services-intro">
+        <div class="container center-heading reveal">
+          <span class="section-label">WHAT WE OFFER</span>
+          <h2>Dental care made <span>simple.</span></h2>
+          <p>
+            Whether you're due for a routine examination or looking to improve
+            your smile, we offer a range of services to support your oral health
+            at every stage.
+          </p>
+        </div>
+
+        <div class="container services-main-grid">
+          <article class="service-large-card reveal">
+            <div class="service-large-image">
+              <img
+                src="images/services/general-dentistry.jpg"
+                alt="Dentist providing general dental care"
+              />
+            </div>
+            <div class="service-large-content">
+              <div class="service-card-icon">01</div>
+              <span class="service-category">PREVENTIVE CARE</span>
+              <h3>General Dentistry</h3>
+              <p>
+                Regular examinations, professional cleaning, and preventive care
+                to help maintain healthy teeth and gums.
+              </p>
+              <a
+                href="contact.html?service=General%20Dentistry"
+                class="service-link"
+                >Book this service <span>→</span></a
+              >
+            </div>
+          </article>
+
+          <article class="service-large-card reveal">
+            <div class="service-large-image">
+              <img
+                src="images/services/whitening.jpg"
+                alt="Cosmetic dental treatment"
+              />
+            </div>
+            <div class="service-large-content">
+              <div class="service-card-icon">02</div>
+              <span class="service-category">SMILE ENHANCEMENT</span>
+              <h3>Cosmetic Dentistry</h3>
+              <p>
+                Smile-focused treatments designed to improve the appearance of
+                your teeth while keeping your results natural.
+              </p>
+              <a
+                href="contact.html?service=Cosmetic%20Dentistry"
+                class="service-link"
+                >Book this service <span>→</span></a
+              >
+            </div>
+          </article>
+
+          <article class="service-large-card reveal">
+            <div class="service-large-image">
+              <img
+                src="images/services/restorative-dentistry.jpg"
+                alt="Restorative dental treatment"
+              />
+            </div>
+            <div class="service-large-content">
+              <div class="service-card-icon">03</div>
+              <span class="service-category">RESTORATIVE CARE</span>
+              <h3>Restorative Dentistry</h3>
+              <p>
+                Professional treatments that help restore damaged or missing
+                teeth and bring back comfortable function.
+              </p>
+              <a
+                href="contact.html?service=Restorative%20Dentistry"
+                class="service-link"
+                >Book this service <span>→</span></a
+              >
+            </div>
+          </article>
+
+          <article class="service-large-card reveal">
+            <div class="service-large-image">
+              <img
+                src="images/services/braces.jpg"
+                alt="Orthodontic dental treatment"
+              />
+            </div>
+            <div class="service-large-content">
+              <div class="service-card-icon">04</div>
+              <span class="service-category">ALIGNMENT</span>
+              <h3>Orthodontics</h3>
+              <p>
+                Personalized solutions to improve tooth alignment and create a
+                healthier, more balanced smile.
+              </p>
+              <a href="contact.html?service=Orthodontics" class="service-link"
+                >Book this service <span>→</span></a
+              >
+            </div>
+          </article>
+
+          <article class="service-large-card reveal">
+            <div class="service-large-image">
+              <img
+                src="images/services/children-dentistry.jpg"
+                alt="Child receiving dental care"
+              />
+            </div>
+            <div class="service-large-content">
+              <div class="service-card-icon">05</div>
+              <span class="service-category">FAMILY CARE</span>
+              <h3>Children's Dentistry</h3>
+              <p>
+                Gentle dental visits designed to help children build healthy
+                habits and feel comfortable at the dentist.
+              </p>
+              <a
+                href="contact.html?service=Children's%20Dentistry"
+                class="service-link"
+                >Book this service <span>→</span></a
+              >
+            </div>
+          </article>
+
+          <article class="service-large-card reveal">
+            <div class="service-large-image">
+              <img
+                src="images/services/emergency-dentistry.jpg"
+                alt="Dentist providing urgent dental care"
+              />
+            </div>
+            <div class="service-large-content">
+              <div class="service-card-icon">06</div>
+              <span class="service-category">URGENT CARE</span>
+              <h3>Emergency Dentistry</h3>
+              <p>
+                Prompt attention for unexpected dental problems, helping you get
+                the care you need when you need it.
+              </p>
+              <a
+                href="contact.html?service=Emergency%20Dentistry"
+                class="service-link"
+                >Contact us <span>→</span></a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CARE PROCESS -->
+      <section class="section-padding care-process">
+        <div class="container">
+          <div class="center-heading reveal">
+            <span class="section-label">HOW IT WORKS</span>
+            <h2>Your care, <span>step by step.</span></h2>
+            <p>
+              We keep every stage of your dental experience clear and
+              comfortable.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-item reveal">
+              <div class="process-number">01</div>
+              <div class="process-line"></div>
+              <h3>Book a Visit</h3>
+              <p>
+                Choose a convenient appointment time and tell us how we can
+                help.
+              </p>
+            </div>
+
+            <div class="process-item reveal">
+              <div class="process-number">02</div>
+              <div class="process-line"></div>
+              <h3>Meet Your Dentist</h3>
+              <p>
+                We'll listen to your concerns and carefully assess your dental
+                health.
+              </p>
+            </div>
+
+            <div class="process-item reveal">
+              <div class="process-number">03</div>
+              <div class="process-line"></div>
+              <h3>Discuss Your Options</h3>
+              <p>
+                Your dentist will explain suitable treatment options clearly.
+              </p>
+            </div>
+
+            <div class="process-item reveal">
+              <div class="process-number">04</div>
+              <div class="process-line"></div>
+              <h3>Start Your Care</h3>
+              <p>
+                Move forward with a personalized plan designed around your
+                needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY US -->
+      <section class="section-padding services-why">
+        <div class="container two-column">
+          <div class="services-why-image reveal">
+            <img
+              src="images/clinic.jpg"
+              alt="Modern BrightSmile dental clinic"
+            />
+            <div class="services-badge">
+              <strong>15+</strong>
+              <span>Years of<br />Experience</span>
+            </div>
+          </div>
+
+          <div class="services-why-content reveal">
+            <span class="section-label">WHY CHOOSE US</span>
+            <h2>Quality care with a <span>gentle approach.</span></h2>
+            <p>
+              We know that every patient is different. That's why we take the
+              time to understand your needs and create a treatment experience
+              that feels comfortable from beginning to end.
+            </p>
+
+            <ul class="check-list">
+              <li><span>✓</span> Experienced dental professionals</li>
+              <li><span>✓</span> Modern treatment techniques</li>
+              <li><span>✓</span> Clear treatment explanations</li>
+              <li><span>✓</span> Comfortable and welcoming environment</li>
+            </ul>
+
+            <a href="about.html" class="text-button"
+              >Learn more about us <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section-padding services-cta">
+        <div class="container">
+          <div class="services-cta-content reveal">
+            <span class="section-label">READY WHEN YOU ARE</span>
+            <h2>Give your smile the care it deserves.</h2>
+            <p>
+              Have questions about a treatment? Our team is happy to help you
+              find the right next step.
+            </p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="btn btn-primary"
+                >Book an Appointment <span>→</span></a
+              >
+              <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              DENTAL CARE
+              <small>Clinic</small>
+            </span>
+          </a>
+          <p>
+            Modern dental care with a gentle, patient-first approach. Helping
+            you feel confident about your smile.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter">x</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Our Dentists</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li>123 Smile Avenue</li>
+            <li>Dental City, DC 10001</li>
+            <li>+1 555 123 4567</li>
+            <li>hello@DentalCare.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Dental Care Clinic. All rights reserved.</p>
+          <p>Designed for better smiles.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS Files/effects.js"></script>
+    <script src="JS Files/appointment.js"></script>
+  </body>
+</html>

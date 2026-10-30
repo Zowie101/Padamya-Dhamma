@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Tip | Dental Care Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS Files/Essential.css" />
+    <link rel="stylesheet" href="CSS Files/Tip-detail.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <!-- LOGO -->
+          <a href="home.html" class="logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">
+              Dental Care
+              <small>CLINIC</small>
+            </span>
+          </a>
+
+          <!-- MOBILE APPOINTMENT BUTTON -->
+          <div class="mobile-appointment">
+            <button
+              type="button"
+              class="appointment-toggle"
+              aria-label="View appointments"
+            >
+              <span class="appointment-icon">♡</span>
+              <span class="appointment-count">0</span>
+            </button>
+          </div>
+
+          <!-- MOBILE MENU BUTTON -->
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- NAVIGATION LINKS -->
+          <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Dentists</a></li>
+            <li><a href="offers.html">Offers & Reviews</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+
+            <!-- DESKTOP APPOINTMENT -->
+            <li class="appointment-menu">
+              <button
+                type="button"
+                class="appointment-toggle"
+                aria-label="View appointments"
+              >
+                <span class="appointment-icon">♡</span>
+                <span class="appointment-count">0</span>
+              </button>
+            </li>
+
+            <!-- BOOK APPOINTMENT -->
+            <li>
+              <a href="contact.html" class="nav-button"> Book Appointment </a>
+            </li>
+          </ul>
+
+          <!-- SHARED APPOINTMENT DROPDOWN -->
+          <div class="appointment-dropdown" id="appointmentDropdown">
+            <div class="appointment-dropdown-header">
+              <div>
+                <span class="section-label">MY APPOINTMENTS</span>
+                <h3>Your Bookings</h3>
+              </div>
+
+              <button
+                type="button"
+                class="appointment-close"
+                id="appointmentClose"
+                aria-label="Close appointments"
+              >
+                ×
+              </button>
+            </div>
+
+            <div class="appointment-list" id="appointmentList">
+              <div class="empty-appointments">
+                <div class="empty-icon">♡</div>
+                <h4>No appointments yet</h4>
+                <p>Your booked appointments will appear here.</p>
+
+                <a href="contact.html" class="btn btn-primary">
+                  Book an Appointment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- BREADCRUMB -->
+
+      <section class="detail-header">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="tips.html">Dental Tips</a>
+            <span>/</span>
+            <span id="breadcrumbTitle">Dental Care Guide</span>
+          </div>
+
+          <div class="detail-heading">
+            <span class="section-label" id="tipCategory">DENTAL CARE</span>
+            <h1 id="tipTitle">Dental Care Guide</h1>
+            <p id="tipIntro">
+              Helpful information for maintaining a healthy smile.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DETAIL -->
+
+      <section class="tip-detail section-padding">
+        <div class="container detail-layout">
+          <article class="detail-article">
+            <div class="detail-image">
+              <img
+                id="tipImage"
+                src="images/tip-featured.jpg"
+                alt="Dental care tip"
+              />
+            </div>
+
+            <div class="article-meta">
+              <span id="tipReadTime">5 min read</span>
+              <span>•</span>
+              <span>Dental Care Clinic</span>
+            </div>
+
+            <div id="tipContent">
+              <h2>Taking care of your smile</h2>
+
+              <p>
+                Good dental care starts with simple habits that become part of
+                your everyday routine. Consistency is one of the most important
+                parts of maintaining good oral hygiene.
+              </p>
+
+              <h2>Why it matters</h2>
+
+              <p>
+                Taking care of your teeth and gums can help you maintain a
+                cleaner, healthier mouth and make it easier to identify changes
+                that may need professional attention.
+              </p>
+
+              <div class="tip-highlight">
+                <span>✦</span>
+                <div>
+                  <strong>Dental Care Clinic Tip</strong>
+                  <p>
+                    Small, consistent habits can make a big difference to your
+                    daily oral care routine.
+                  </p>
+                </div>
+              </div>
+
+              <h2>What you can do</h2>
+
+              <ul class="article-list">
+                <li>Make dental care part of your daily routine.</li>
+                <li>Take your time instead of rushing through brushing.</li>
+                <li>Clean between your teeth regularly.</li>
+                <li>Keep up with professional dental appointments.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- SIDE PANEL -->
+
+          <aside class="detail-sidebar">
+            <div class="sidebar-card">
+              <span class="section-label">NEED PROFESSIONAL ADVICE?</span>
+              <h3>Talk to our dental team.</h3>
+              <p>
+                If you have concerns about your teeth or gums, our friendly team
+                is ready to help.
+              </p>
+
+              <a href="contact.html" class="btn btn-primary">
+                Book an Appointment <span>→</span>
+              </a>
+            </div>
+
+            <div class="sidebar-card related-card">
+              <span class="section-label">EXPLORE MORE</span>
+              <h3>More dental tips</h3>
+
+              <a href="tip-detail.html?tip=brushing" class="related-tip">
+                <span>01</span>
+                <div>
+                  <strong>Better Brushing</strong>
+                  <small>Oral Hygiene</small>
+                </div>
+              </a>
+
+              <a href="tip-detail.html?tip=flossing" class="related-tip">
+                <span>02</span>
+                <div>
+                  <strong>Flossing Guide</strong>
+                  <small>Healthy Habits</small>
+                </div>
+              </a>
+
+              <a href="tip-detail.html?tip=nutrition" class="related-tip">
+                <span>03</span>
+                <div>
+                  <strong>Smile-Friendly Foods</strong>
+                  <small>Nutrition</small>
+                </div>
+              </a>
+
+              <a href="tips.html" class="text-button">
+                View All Tips <span>→</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- BOTTOM CTA -->
+
+      <section class="detail-cta">
+        <div class="container detail-cta-content">
+          <div>
+            <span class="section-label">KEEP YOUR SMILE HEALTHY</span>
+            <h2>Have questions about your dental health?</h2>
+            <p>
+              Our team is here to help you understand your dental care options.
+            </p>
+          </div>
+
+          <a href="contact.html" class="btn btn-white">
+            Book an Appointment <span>→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon">✚</span>
+            <span class="logo-text">Dental Care<small>CLINIC</small></span>
+          </a>
+
+          <p>
+            Modern dental care with a gentle, patient-first approach. Helping
+            you feel confident about your smile.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter">x</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dentists.html">Our Dentists</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="tips.html">Dental Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li>123 Smile Avenue</li>
+            <li>Dental City, DC 10001</li>
+            <li>+1 555 123 4567</li>
+            <li>hello@dentalcare.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Dental Care Clinic. All rights reserved.</p>
+          <p>Designed for better smiles.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS Files/effects.js"></script>
+    <script src="JS Files/appointment.js"></script>
+    <script src="JS Files/tip-detail.js"></script>
+  </body>
+</html>
